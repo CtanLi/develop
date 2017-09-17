@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, Reusable {
+class CategoryController: UIViewController, UITableViewDelegate, UITableViewDataSource, Reusable {
     
     var categoryName = [String]()
     var categoryTime = [String]()
@@ -112,7 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let selectedCell = categoryName[indexPath.row]
         let myStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let detailController = myStoryBoard.instantiateViewController(withIdentifier: DetailController.identifier) as! DetailController
+        let detailController = myStoryBoard.instantiateViewController(withIdentifier: ResourcesController.identifier) as! ResourcesController
         detailController.selectedItem = selectedCell
         self.navigationController?.pushViewController(detailController, animated: true)
         
