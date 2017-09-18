@@ -23,6 +23,7 @@ class CategoryController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navigationItem.title = "Categories"
         getCategories()
     }
     
@@ -104,17 +105,14 @@ class CategoryController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.titleName.text = categoryName[indexPath.row]
         cell.timeCreated.text = dateString
-
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let selectedCell = categoryName[indexPath.row]
         let myStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let detailController = myStoryBoard.instantiateViewController(withIdentifier: ResourcesController.identifier) as! ResourcesController
         detailController.selectedItem = selectedCell
         self.navigationController?.pushViewController(detailController, animated: true)
-        
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 
 class DetailCell: UITableViewCell, Reusable {
 
+     //Outlets
     @IBOutlet weak var resourceImage: UIImageView!
     @IBOutlet weak var resourceDescription: UILabel!
     @IBOutlet weak var resourceTitle: UILabel!

@@ -10,7 +10,6 @@
 		4628B4E31F6E941A0083354F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4628B4E21F6E941A0083354F /* MessageUI.framework */; };
 		4628B4E51F6E9AB30083354F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4628B4E41F6E9AB30083354F /* MapKit.framework */; };
 		4628B4E91F6EAA7F0083354F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4628B4E81F6EAA7F0083354F /* WebViewController.swift */; };
-		465731951F6DA10E007CFAD2 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731941F6DA10E007CFAD2 /* HeaderCell.swift */; };
 		465731971F6DD197007CFAD2 /* PhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731961F6DD197007CFAD2 /* PhoneCell.swift */; };
 		465731991F6DD4EE007CFAD2 /* TollFreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731981F6DD4EE007CFAD2 /* TollFreeCell.swift */; };
 		4657319B1F6DD502007CFAD2 /* FaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4657319A1F6DD502007CFAD2 /* FaxCell.swift */; };
@@ -19,7 +18,6 @@
 		465731A11F6DD607007CFAD2 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731A01F6DD607007CFAD2 /* AddressCell.swift */; };
 		465731A31F6DEC72007CFAD2 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731A21F6DEC72007CFAD2 /* NoteCell.swift */; };
 		465731A51F6DEC9E007CFAD2 /* SundayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731A41F6DEC9E007CFAD2 /* SundayCell.swift */; };
-		465731A71F6E2447007CFAD2 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731A61F6E2447007CFAD2 /* Service.swift */; };
 		465731AA1F6E8744007CFAD2 /* MondayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465731A91F6E8744007CFAD2 /* MondayCell.swift */; };
 		46667AF31F6A1F1400DBF554 /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 46667AF01F6A1F1400DBF554 /* categories.json */; };
 		46667AF41F6A1F1400DBF554 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 46667AF11F6A1F1400DBF554 /* restaurants.json */; };
@@ -61,7 +59,6 @@
 		4628B4E21F6E941A0083354F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4628B4E41F6E9AB30083354F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4628B4E81F6EAA7F0083354F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		465731941F6DA10E007CFAD2 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		465731961F6DD197007CFAD2 /* PhoneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCell.swift; sourceTree = "<group>"; };
 		465731981F6DD4EE007CFAD2 /* TollFreeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TollFreeCell.swift; sourceTree = "<group>"; };
 		4657319A1F6DD502007CFAD2 /* FaxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaxCell.swift; sourceTree = "<group>"; };
@@ -70,7 +67,6 @@
 		465731A01F6DD607007CFAD2 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
 		465731A21F6DEC72007CFAD2 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		465731A41F6DEC9E007CFAD2 /* SundayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundayCell.swift; sourceTree = "<group>"; };
-		465731A61F6E2447007CFAD2 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		465731A91F6E8744007CFAD2 /* MondayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondayCell.swift; sourceTree = "<group>"; };
 		46667AF01F6A1F1400DBF554 /* categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
 		46667AF11F6A1F1400DBF554 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
@@ -133,14 +129,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		465731A81F6E244E007CFAD2 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				465731A61F6E2447007CFAD2 /* Service.swift */,
-			);
-			name = Service;
-			sourceTree = "<group>";
-		};
 		46ECDDAC1F69E88600C6104F /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +146,6 @@
 				46ECDDAE1F69E8AC00C6104F /* CategoryCell.swift */,
 				46667AF81F6A3F3000DBF554 /* ResourcesCell.swift */,
 				468093A71F6C8276003E48F9 /* DetailCell.swift */,
-				465731941F6DA10E007CFAD2 /* HeaderCell.swift */,
 				465731961F6DD197007CFAD2 /* PhoneCell.swift */,
 				465731981F6DD4EE007CFAD2 /* TollFreeCell.swift */,
 				4657319A1F6DD502007CFAD2 /* FaxCell.swift */,
@@ -213,7 +200,6 @@
 		46FBE2F81F69E4B600600AED /* QuickSeriesTest */ = {
 			isa = PBXGroup;
 			children = (
-				465731A81F6E244E007CFAD2 /* Service */,
 				46ECDDB31F69F69F00C6104F /* model */,
 				46ECDDB01F69ECE500C6104F /* Extension */,
 				46ECDDAD1F69E89000C6104F /* view */,
@@ -406,11 +392,9 @@
 				465731971F6DD197007CFAD2 /* PhoneCell.swift in Sources */,
 				46ECDDB21F69ED0100C6104F /* Extension.swift in Sources */,
 				46667AF71F6A3ED700DBF554 /* ResourcesController.swift in Sources */,
-				465731A71F6E2447007CFAD2 /* Service.swift in Sources */,
 				465731AA1F6E8744007CFAD2 /* MondayCell.swift in Sources */,
 				46ECDDB51F69F6B400C6104F /* categories.swift in Sources */,
 				465731A51F6DEC9E007CFAD2 /* SundayCell.swift in Sources */,
-				465731951F6DA10E007CFAD2 /* HeaderCell.swift in Sources */,
 				46667AF91F6A3F3000DBF554 /* ResourcesCell.swift in Sources */,
 				46FBE2FA1F69E4B600600AED /* AppDelegate.swift in Sources */,
 				46ECDDAF1F69E8AC00C6104F /* CategoryCell.swift in Sources */,

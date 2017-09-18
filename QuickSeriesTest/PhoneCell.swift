@@ -12,6 +12,7 @@ class PhoneCell: UITableViewCell, Reusable {
 
     var phoneNum = ""
     
+     //Outlets
     @IBOutlet weak var phoneNumber: UILabel!
     
     override func awakeFromNib() {

@@ -11,6 +11,8 @@ import UIKit
 class EmailAddressCell: UITableViewCell, Reusable {
 
     var emailFunction: (() -> (Void))!
+    
+     //Outlets
     @IBOutlet weak var emailAddress: UILabel!
     
     override func awakeFromNib() {
@@ -26,7 +28,6 @@ class EmailAddressCell: UITableViewCell, Reusable {
 
     var emailResource = Resources() {
         didSet {
-            
             emailAddress.text = emailResource.email
         }
     }

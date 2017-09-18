@@ -10,6 +10,7 @@ import UIKit
 
 class SundayCell: UITableViewCell, Reusable {
 
+     //Outlets
     @IBOutlet weak var sundayFromDate: UILabel!
     @IBOutlet weak var sundayToDate: UILabel!
     

@@ -11,11 +11,21 @@ import UIKit
 class WebViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelegate, Reusable {
     
     var webLink = ""
-
+    
+    //outlets
     @IBOutlet weak var webView: UIWebView!
+    
+    
+    //
+    //MARK:- Override
+    //
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        guard webLink.isEmpty != true else {
+            return
+        }
         webView.loadRequest(URLRequest(url: URL(string: webLink)!))
     }
 
@@ -24,7 +34,11 @@ class WebViewController: UIViewController, UIWebViewDelegate, UIScrollViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    //    MARK:- UIWebView delegate
+    
+    //
+    //MARK:- UIWebView delegate
+    //
+    
     func webViewDidFinishLoad(_ webView: UIWebView) {
         webView.scrollView.delegate = self // set delegate method of UISrollView
         webView.scrollView.maximumZoomScale = 10

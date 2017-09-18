@@ -23,13 +23,4 @@ class ResourcesCell: UITableViewCell, Reusable {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-
-    var resource = Resources() {
-        didSet {
-            
-            //let title = resource.title
-            
-           
-        }
-    }
 }

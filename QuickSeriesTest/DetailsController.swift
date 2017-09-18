@@ -27,7 +27,6 @@ enum DetailSection: Int {
     static var numberOfSection: Int {
         return 10
     }
-    
 }
 
 class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
@@ -39,13 +38,14 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
         static let businessSectionHeaderHeight: CGFloat = 180.0
     }
 
+    //outlets
     @IBOutlet weak var detailTable: UITableView!
     
+    //vars
     var email = ""
     var address = ""
     var webLink = ""
     var coords: CLLocationCoordinate2D?
-    
     var selectedItem = [String]()
     var placeTitle = [String]()
     var decriptionText = [String]()
@@ -54,6 +54,11 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
     var decription = [String]()
     var titleNames = [String]()
     var identifier = [String]()
+    
+    
+    //
+    //MARK:- Override
+    //
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,8 +84,11 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
         }
     }
     
+    //
+    //MARK:- Operations
+    //
+    
     func getRestuarantInfos() {
-        
         guard selectedItem.first != selectedCounts.resoucrces.rawValue else {
             return
         }
@@ -205,7 +213,6 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
         }
     
     func getVacationInfos() {
-        
         guard selectedItem.first == selectedCounts.resoucrces.rawValue else {
             return
         }
@@ -244,8 +251,12 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
             print(error.localizedDescription)
         }
     }
-
     
+    //
+    // MARK:- implementations
+    //
+    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return DetailSection.numberOfSection
     }
@@ -256,36 +267,34 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
             return 0
         }
         switch section {
-        case .image:
-            return resources.count
-        case .phoneContact:
-            return resources.count
-        case .faxContact:
-            return resources.count
-        case .tollFreeContact:
-            return resources.count
-        case .email:
-            return resources.count
-        case .webLink:
-            return resources.count
-        case .address:
-            return resources.count
-        case .notes:
-            return resources.count
-        case .sunday:
-            return resources.count
-        case .monday:
-            return resources.count
+            case .image:
+                return resources.count
+            case .phoneContact:
+                return resources.count
+            case .faxContact:
+                return resources.count
+            case .tollFreeContact:
+                return resources.count
+            case .email:
+                return resources.count
+            case .webLink:
+                return resources.count
+            case .address:
+                return resources.count
+            case .notes:
+                return resources.count
+            case .sunday:
+                return resources.count
+            case .monday:
+                return resources.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-  
         guard let section = DetailSection(rawValue: indexPath.section) else {
             let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
             cell.textLabel?.textAlignment = .center
             cell.textLabel?.text = NSLocalizedString("empty feed", comment: "empty feed")
-            
             return cell
         }
      
@@ -368,7 +377,6 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
             }
         }
     
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let section = DetailSection(rawValue: indexPath.section) {
             switch section {
@@ -383,20 +391,35 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
                 }
             return Constraints.defaultSectionHeaderHeight
         }
-
-
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let section = DetailSection(rawValue: section) else {
+            return ""
+        }
+        switch section {
+            case .phoneContact:
+                return "CONTACT INFORMATION"
+            case .address:
+                return "ADDRESS"
+            case .notes:
+                return "NOTES"
+            case .sunday:
+                return "BUSINESS HOURS"
+            default: break
+        }
+        return ""
+    }
+    
     enum selectedCounts: String {
         case resoucrces = "places-to-read"
     }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
-        
+        mailComposerVC.mailComposeDelegate = self
         mailComposerVC.setToRecipients([email])
         mailComposerVC.setSubject("Sending you an in-app e-mail...")
         mailComposerVC.setMessageBody("Sending e-mail in-app is not so bad!", isHTML: false)
-        
         return mailComposerVC
     }
     
@@ -411,8 +434,7 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
     }
 
     func addressToCoordinatesConverter(address: String) {
-        let addressString = "\(address)" //"\(city.text) \(state.text) \(zip.text)"
-        
+        let addressString = "\(address)"
         CLGeocoder().geocodeAddressString(addressString, completionHandler:
             {(placemarks, error) in
                 
@@ -429,11 +451,9 @@ class DetailsController: UIViewController, Reusable, UITableViewDataSource, UITa
     
     func showMap() {
         let addressDict = ["addressStreetKey" : address]
-        
         let place = MKPlacemark(coordinate: coords!, addressDictionary: addressDict)
         let mapItem = MKMapItem(placemark: place)
         let options = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        
         mapItem.openInMaps(launchOptions: options)
     }
     

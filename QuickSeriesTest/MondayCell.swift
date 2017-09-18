@@ -10,6 +10,7 @@ import UIKit
 
 class MondayCell: UITableViewCell, Reusable {
 
+     //Outlets
     @IBOutlet weak var mondayFromDate: UILabel!
     @IBOutlet weak var mondayToDate: UILabel!
     
@@ -30,5 +31,4 @@ class MondayCell: UITableViewCell, Reusable {
             mondayToDate.text = mondayResource.mondayToDate
         }
     }
-
 }

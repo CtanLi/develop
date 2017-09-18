@@ -10,21 +10,18 @@ import UIKit
 
 class ResourcesController: UIViewController, Reusable, UITableViewDelegate, UITableViewDataSource {
 
+    //outlet
     @IBOutlet weak var detailTableView: UITableView!
     
+    //vars
     var selectedItem = String()
-    
     var placeTitle = [String]()
     var decriptionText = [String]()
     var newIdentifier = [String]()
-    
-    
     var decription = [String]()
     var titleNames = [String]()
     var identifier = [String]()
-    
     var doubleTap : Bool! = false
-    
     
     var resources = [Resources]() {
         didSet {
@@ -32,19 +29,24 @@ class ResourcesController: UIViewController, Reusable, UITableViewDelegate, UITa
         }
     }
     
+    
     //
     //MARK:- Override
     //
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         getRestuarantInfos()
         getVacationInfos()
-        
         let addReminder = UIBarButtonItem(title: "Sort", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ResourcesController.sort))
         self.navigationItem.rightBarButtonItem = addReminder
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     //
     //MARK:- Operations
@@ -164,6 +166,7 @@ class ResourcesController: UIViewController, Reusable, UITableViewDelegate, UITa
             doubleTap = true
             
         } else {
+            // sort array Z-A
             placeTitle.removeAll()
             decriptionText.removeAll()
             
@@ -192,16 +195,10 @@ class ResourcesController: UIViewController, Reusable, UITableViewDelegate, UITa
         }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
     //
     // MARK:- implementations
     //
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -216,19 +213,15 @@ class ResourcesController: UIViewController, Reusable, UITableViewDelegate, UITa
             as! ResourcesCell
         let descText = decriptionText[indexPath.row]
         let newDescription = descText.replacingOccurrences(of: "<[^>]+>", with: "", options: String.CompareOptions.regularExpression, range: nil)
-        
         cell.placeTitle.text = placeTitle[indexPath.row]
         cell.descriptionText.text = newDescription
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let ids = self.identifier.map({ (id) -> String in
             return id
         })
-        
         let storyIdsForDetail = Array(ids[(indexPath as NSIndexPath).row..<ids.count])
         let myStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let resourcesController = myStoryBoard.instantiateViewController(withIdentifier: DetailsController.identifier) as! DetailsController

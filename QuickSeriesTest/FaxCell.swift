@@ -10,7 +10,9 @@ import UIKit
 
 class FaxCell: UITableViewCell, Reusable {
 
+     //Outlets
     @IBOutlet weak var faxNumber: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

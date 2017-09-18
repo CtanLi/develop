@@ -14,6 +14,7 @@ class NoteCell: UITableViewCell, Reusable {
     var twtFunction: (() -> (Void))!
     var youTubeFunction: (() -> (Void))!
     
+     //Outlets
     @IBOutlet weak var faceBookButton: UIButton!
     @IBOutlet weak var twitterButton: UIButton!
     @IBOutlet weak var youtubeButton: UIButton!

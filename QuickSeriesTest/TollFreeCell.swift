@@ -12,6 +12,7 @@ class TollFreeCell: UITableViewCell, Reusable {
 
     var tollFreeNum = ""
     
+     //Outlets
     @IBOutlet weak var tollFree: UILabel!
     
     override func awakeFromNib() {

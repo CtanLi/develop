@@ -10,6 +10,7 @@ import UIKit
 
 class WebSiteCell: UITableViewCell, Reusable {
 
+     //Outlets
     @IBOutlet weak var webLink: UILabel!
     
     var webFunction: (() -> (Void))!
@@ -30,7 +31,6 @@ class WebSiteCell: UITableViewCell, Reusable {
             webLink.text = webResource.website
         }
     }
-    
     
     @IBAction func webAction(_ sender: Any) {
         webFunction()

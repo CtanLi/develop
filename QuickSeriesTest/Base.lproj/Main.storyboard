@@ -223,31 +223,8 @@
                                             <outlet property="resourceTitle" destination="Gg8-kk-nvF" id="rDF-UA-QNL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="cN8-cY-H1s">
-                                        <rect key="frame" x="0.0" y="247" width="375" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cN8-cY-H1s" id="kAc-HI-QQH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTACT INFORMATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-NB-AEW">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="45"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2zn-NB-AEW" firstAttribute="centerY" secondItem="kAc-HI-QQH" secondAttribute="centerY" id="5jg-AH-bzZ"/>
-                                                <constraint firstItem="2zn-NB-AEW" firstAttribute="trailing" secondItem="kAc-HI-QQH" secondAttribute="trailingMargin" id="XTl-8w-YLD"/>
-                                                <constraint firstItem="2zn-NB-AEW" firstAttribute="leading" secondItem="kAc-HI-QQH" secondAttribute="leadingMargin" id="jLy-Bw-DbU"/>
-                                                <constraint firstItem="2zn-NB-AEW" firstAttribute="top" secondItem="kAc-HI-QQH" secondAttribute="top" id="sVF-h6-hMa"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PhoneCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhoneCell" rowHeight="60" id="yAZ-Yi-Etm" customClass="PhoneCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="292" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="247" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yAZ-Yi-Etm" id="KQB-kZ-mYn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -297,7 +274,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TollFreeCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TollFreeCell" rowHeight="60" id="Ske-DO-hgO" customClass="TollFreeCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="352" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="307" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ske-DO-hgO" id="C74-mz-X35">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -349,7 +326,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FaxCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FaxCell" rowHeight="60" id="d5k-QJ-0zR" customClass="FaxCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="412" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="367" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d5k-QJ-0zR" id="gZt-DC-vLn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
@@ -386,7 +363,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EmailAddressCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailAddressCell" rowHeight="60" id="b2I-Go-mZx" customClass="EmailAddressCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="472" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="427" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b2I-Go-mZx" id="az0-DW-DiU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -435,7 +412,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WebSiteCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="WebSiteCell" rowHeight="60" id="tQg-Mj-8PS" customClass="WebSiteCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="532" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="487" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tQg-Mj-8PS" id="ViY-Xk-Wpa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -482,31 +459,8 @@
                                             <outlet property="webLink" destination="YRG-9c-lCu" id="s9d-X1-eAQ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KWG-3s-pyP">
-                                        <rect key="frame" x="0.0" y="592" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWG-3s-pyP" id="IyR-Cm-v8U">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPZ-gJ-dPN">
-                                                    <rect key="frame" x="8" y="8" width="359" height="43"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZPZ-gJ-dPN" firstAttribute="leading" secondItem="IyR-Cm-v8U" secondAttribute="leadingMargin" id="1hc-KP-KfS"/>
-                                                <constraint firstItem="ZPZ-gJ-dPN" firstAttribute="centerY" secondItem="IyR-Cm-v8U" secondAttribute="centerY" id="EoC-1h-IBd"/>
-                                                <constraint firstItem="ZPZ-gJ-dPN" firstAttribute="trailing" secondItem="IyR-Cm-v8U" secondAttribute="trailingMargin" id="Qpj-Sz-eQ9"/>
-                                                <constraint firstItem="ZPZ-gJ-dPN" firstAttribute="top" secondItem="IyR-Cm-v8U" secondAttribute="topMargin" id="auA-YH-1EF"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AddressCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="60" id="JeZ-yy-Lnn" customClass="AddressCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="652" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="547" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JeZ-yy-Lnn" id="Dcl-mI-Fpx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -554,30 +508,8 @@
                                             <outlet property="address" destination="CVY-XH-ULG" id="ldD-vA-Uf2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="cRp-cA-17n">
-                                        <rect key="frame" x="0.0" y="712" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cRp-cA-17n" id="Tbe-i2-qmE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq8-u5-tXo">
-                                                    <rect key="frame" x="8" y="8" width="359" height="43"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="hq8-u5-tXo" firstAttribute="leading" secondItem="Tbe-i2-qmE" secondAttribute="leadingMargin" id="Kg2-U9-RhL"/>
-                                                <constraint firstItem="hq8-u5-tXo" firstAttribute="centerY" secondItem="Tbe-i2-qmE" secondAttribute="centerY" id="MrB-Al-h3F"/>
-                                                <constraint firstItem="hq8-u5-tXo" firstAttribute="top" secondItem="Tbe-i2-qmE" secondAttribute="topMargin" id="Rgu-gX-eXb"/>
-                                                <constraint firstItem="hq8-u5-tXo" firstAttribute="trailing" secondItem="Tbe-i2-qmE" secondAttribute="trailingMargin" id="VbS-nb-6NA"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NoteCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="65" id="M8U-vh-vCA" customClass="NoteCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="772" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="607" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8U-vh-vCA" id="0Ue-Wj-YY5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -626,31 +558,8 @@
                                             <outlet property="youtubeButton" destination="1WH-ma-PLg" id="IeM-cy-srz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="72B-b8-Q8N">
-                                        <rect key="frame" x="0.0" y="837" width="375" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72B-b8-Q8N" id="KDS-W6-zaj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSINESS HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxw-ZN-Yv6">
-                                                    <rect key="frame" x="8" y="8" width="359" height="49"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="jxw-ZN-Yv6" firstAttribute="centerY" secondItem="KDS-W6-zaj" secondAttribute="centerY" id="87e-5U-wLm"/>
-                                                <constraint firstItem="jxw-ZN-Yv6" firstAttribute="leading" secondItem="KDS-W6-zaj" secondAttribute="leadingMargin" id="8t3-VP-hpd"/>
-                                                <constraint firstItem="jxw-ZN-Yv6" firstAttribute="top" secondItem="KDS-W6-zaj" secondAttribute="topMargin" id="Lql-W2-5pF"/>
-                                                <constraint firstItem="jxw-ZN-Yv6" firstAttribute="trailing" secondItem="KDS-W6-zaj" secondAttribute="trailingMargin" id="P1W-vC-koZ"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SundayCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SundayCell" rowHeight="65" id="VHL-gv-azf" customClass="SundayCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="902" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="672" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VHL-gv-azf" id="rhe-6m-FFn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -698,7 +607,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MondayCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MondayCell" rowHeight="65" id="uGv-9n-3qY" customClass="MondayCell" customModule="QuickSeriesTest" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="967" width="375" height="65"/>
+                                        <rect key="frame" x="0.0" y="737" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uGv-9n-3qY" id="8yy-LW-Rr7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -763,7 +672,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUr-jI-FWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2616.8000000000002" y="-438.53073463268368"/>
+            <point key="canvasLocation" x="2615" y="-420"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="aAE-Wq-y68">
@@ -796,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHw-ua-m4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3424.8000000000002" y="-445.72713643178412"/>
+            <point key="canvasLocation" x="3401" y="-419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U4t-ZX-ZMm">
